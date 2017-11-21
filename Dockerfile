@@ -12,6 +12,7 @@ RUN apt-get update && \
 
 RUN conda install --quiet --yes \
     'SQLAlchemy' \
+    'sqlalchemy-redshift' \
     'psycopg2'
 
 USER $NB_USER
