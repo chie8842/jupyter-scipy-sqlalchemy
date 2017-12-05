@@ -10,10 +10,11 @@ USER root
 RUN apt-get update && \
     apt-get install -y postgresql
 
-RUN conda install --quiet --yes -c sodre\
+RUN conda install --quiet --yes -c sodre -c conda-forge \
     'SQLAlchemy' \
     'sqlalchemy-redshift' \
     'psycopg2' \
+    'pyspark' \
     'ipython-sql=0.3*'
 
 USER $NB_USER
