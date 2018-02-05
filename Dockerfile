@@ -13,6 +13,7 @@ RUN apt-get update && \
 RUN conda install --quiet --yes -c sodre -c conda-forge \
     'SQLAlchemy' \
     'sqlalchemy-redshift' \
+    'PyMySQL' \
     'psycopg2' \
     'pyspark' \
     'ipython-sql=0.3*'
