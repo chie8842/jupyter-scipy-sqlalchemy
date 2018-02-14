@@ -1,0 +1,8 @@
+jupyter-scipy-notebllk:
+  image: jupyter-scipy-sql-alchemy:latest
+  ports:
+    - 8888:8888
+  volumes:
+    - /Users/chie-chiehayashida/repos/ghe.ckpd.co/research/recommend:/home/jovyan/work
+    - /Users/chie-hayashida/.jupyter/nbconfig:/home/jovyan/.jupyter/nbconfig
+    - /Users/chie-hayashida/.local:/home/jovyan/.jupyter/nbconfig
